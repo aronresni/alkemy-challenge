@@ -32,7 +32,7 @@ const Login = () => {
                 swal("Has ingresado correctamente", "", "succes")
                 console.log(res.data);
                 const token = res.data.token;
-                localStorage.setItem(`token`, token)
+                sessionStorage.setItem(`token`, token)
                 navigate("/listado");
 
 

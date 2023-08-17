@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+
 import axios from "axios"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -10,7 +11,7 @@ import Card from 'react-bootstrap/Card';
 
 const Listado = () => {
     const navigate = useNavigate();
-    let token = localStorage.getItem("token");
+    let token = sessionStorage.getItem("token");
 
     const [moviesList, setMovieList] = useState([]);
 
@@ -43,7 +44,11 @@ const Listado = () => {
                                     <Card.Body>
                                         <Card.Title>{oneMovie.title}</Card.Title>
                                         <Card.Text>{oneMovie.overview.substring(0, 100)}....</Card.Text>
-                                        <Button variant="primary">View Detail</Button>
+
+                                        <Button variant="primary">
+                                            <Link style={{ color: 'white' }} to={`/detalle?movieId=${oneMovie.id}`} >View Detail</Link>
+
+                                        </Button>
                                     </Card.Body>
                                 </Card>
                             </div>
