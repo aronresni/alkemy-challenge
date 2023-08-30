@@ -9,10 +9,14 @@ const Detalle = () => {
     const queryParams = new URLSearchParams(location.search);
     const movieId = queryParams.get('movieId');
 
-
     useEffect(() => {
-        axios.post
-    }, []);
+        effect
+        return () => {
+            cleanup
+        };
+    }, [movieId]);
+
+
 
     return (
         <div>
@@ -33,7 +37,7 @@ const Detalle = () => {
                         <li>Genero 3 </li>
                     </ul>
                 </div>
-             
+
 
             </div>
         </div>
