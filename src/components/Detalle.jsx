@@ -33,30 +33,7 @@ const Detalle = () => {
                         <li>Genero 3 </li>
                     </ul>
                 </div>
-                <div className='col-8'>
-                    <h5>Titulo: Falso</h5>
-                    <h5>Reseña: </h5>
-                    <p>Lorem </p>
-                    <h5>Generos:</h5>
-                    <ul>
-                        <li>Genero 1 </li>
-                        <li>Genero 2 </li>
-                        <li>Genero 3 </li>
-                    </ul>
-                </div>
-                <div className='col-8'>
-                    <h5>Titulo: Falso</h5>
-                    <h5>Reseña: </h5>
-                    <p>Lorem </p>
-                    <h5>Generos:</h5>
-                    <ul>
-                        <li>Genero 1 </li>
-                        <li>Genero 2 </li>
-                        <li>Genero 3 </li>
-                    </ul>
-                </div>
-
-
+             
 
             </div>
         </div>
